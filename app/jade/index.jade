@@ -3,15 +3,47 @@ extends /layouts/_default
 block content
   table#priority
     tr
-      td.notSelect race
-      td Mensch
-      td Ork
-      td Zwerg
-      td Elf
-      td Troll
-    tr
-      td fähigkeit
-      td 24
-      td 20
-      td 16
-      td 12
+      td.notSelect Priority
+      td.notSelect A
+      td.notSelect B
+      td.notSelect C
+      td.notSelect D
+      td.notSelect E
+    tr(data-type="race")
+      td.notSelect Race
+      td.a {{race.a}}
+      td.b {{race.b}}
+      td.c {{race.c}}
+      td.d {{race.d}}
+      td.e {{race.e}}
+    tr(data-type="skills")
+      td.notSelect skills
+      td.a {{skills.a}}
+      td.b {{skills.b}}
+      td.c {{skills.c}}
+      td.d {{skills.d}}
+      td.e {{skills.e}}
+    tr(data-type="type")
+      td.notSelect type
+      td.a {{type.a}}
+      td.b {{type.b}}
+      td.c {{type.c}}
+      td.d {{type.d}}
+      td.e {{type.e}}
+    tr(data-type="income")
+      td.notSelect Money
+      td.a {{income.a}}
+      td.b {{income.b}}
+      td.c {{income.c}}
+      td.d {{income.d}}
+      td.e {{income.e}}
+    tr(data-type="attribute")
+      td.notSelect Attribute
+      td.a {{attribute.a}}
+      td.b {{attribute.b}}
+      td.c {{attribute.c}}
+      td.d {{attribute.d}}
+      td.e {{attribute.e}}
+
+  .result
+
