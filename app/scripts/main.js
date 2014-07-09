@@ -1,7 +1,5 @@
 var $table = document.querySelector('#priority'),
   result = {
-    race: '',
-    income: ''
   },
   $result = document.querySelector('.result');
 $table.addEventListener('click', function(event){
